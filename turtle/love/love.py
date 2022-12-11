@@ -6,7 +6,7 @@ wn.bgcolor('white')
 
 t = turtle.Turtle()
 t.pencolor('black')
-t.speed(10)
+t.speed(3)
 
 def curve():
     for i in range(200):
@@ -27,21 +27,13 @@ def heart():
 heart()
 t.ht()
 
-def write(message):
-    x,y=pos
-    t.penup()
-    t.goto(x,y)
-    t.color('white')
-    style=('Stencil Std', 18, 'italic')
-    t.write(message, font=style)
-
 def write(message, pos):
     x,y=pos
     t.penup()
     t.goto(x,y)
     t.color('white')
-    style=('Stencil Std', 18,)
-    t.write(message,font=style)
+    style=('Stencil Std', 18)
+    t.write(message, font=style)
 
 write('I', (-68, 95))
 write('L', (-55, 95))
