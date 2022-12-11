@@ -6,6 +6,7 @@ wn.bgcolor('white')
 
 t = turtle.Turtle()
 t.pencolor('black')
+t.speed(10)
 
 def curve():
     for i in range(200):
